@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/pavan/Desktop/filmstake-new/frontend/app/%28pages%29/signin/page.jsx"],"sourcesContent":["\"use client\"\r\n\r\nimport manageStore from '@/lib/store/store'\r\nimport React from 'react'\r\n\r\nconst page = () => {\r\n\r\n  const { googleSignIn } = manageStore()\r\n\r\n  const handleGoogleSignin = () => {\r\n    googleSignIn()\r\n  }\r\n\r\n  return (\r\n    <div className=' pt-[20vh] h-[70vh]'>\r\n      <h1 className='text-3xl uppercase text-center'>signin</h1>\r\n      <p className='cursor-pointer' onClick={handleGoogleSignin}>google</p>\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default page"],"names":[],"mappings":";;;;AAEA;AACA;AAHA;;;;AAKA,MAAM,OAAO;IAEX,MAAM,EAAE,YAAY,EAAE,GAAG,CAAA,GAAA,qHAAA,CAAA,UAAW,AAAD;IAEnC,MAAM,qBAAqB;QACzB;IACF;IAEA,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;gBAAG,WAAU;0BAAiC;;;;;;0BAC/C,8OAAC;gBAAE,WAAU;gBAAiB,SAAS;0BAAoB;;;;;;;;;;;;AAGjE;uCAEe"}},
+    {"offset": {"line": 50, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
