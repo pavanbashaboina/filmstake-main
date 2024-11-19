@@ -26,6 +26,12 @@
     "tailwindcss-animate": "^1.0.7",
     "zustand": "^5.0.1"
   },
+  "overrides": {
+    "@studio-freight/react-lenis": {
+      "react": "19.0.0-rc-66855b96-20241106",
+      "react-dom": "19.0.0-rc-66855b96-20241106"
+    }
+  },
   "devDependencies": {
     "postcss": "^8",
     "tailwindcss": "^3.4.1"

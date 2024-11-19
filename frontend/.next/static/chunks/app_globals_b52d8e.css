@@ -492,10 +492,6 @@ body {
   top: 15vh;
 }
 
-.right-4 {
-  right: 1rem;
-}
-
 .z-40 {
   z-index: 40;
 }
@@ -550,6 +546,10 @@ body {
   margin-bottom: 25vh;
 }
 
+.mb-\[5vh\] {
+  margin-bottom: 5vh;
+}
+
 .mr-2 {
   margin-right: .5rem;
 }
@@ -566,35 +566,12 @@ body {
   margin-top: 13vh;
 }
 
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[10vh\] {
-  margin-top: 10vh;
-}
-
 .mt-\[15vh\] {
   margin-top: 15vh;
 }
 
-.mb-\[\] {
-  margin-bottom: ;
-}
-
-.mb-\[5vh\] {
-  margin-bottom: 5vh;
-}
-
 .mt-\[20vh\] {
   margin-top: 20vh;
-}
-
-.line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 }
 
 .block {
@@ -695,10 +672,6 @@ body {
 
 .h-px {
   height: 1px;
-}
-
-.min-h-\[3rem\] {
-  min-height: 3rem;
 }
 
 .min-h-\[50vh\] {
@@ -980,6 +953,10 @@ body {
   white-space: nowrap;
 }
 
+.rounded {
+  border-radius: .25rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -994,10 +971,6 @@ body {
 
 .rounded-xl {
   border-radius: .75rem;
-}
-
-.rounded {
-  border-radius: .25rem;
 }
 
 .rounded-bl-2xl {
@@ -1104,6 +1077,10 @@ body {
   background-color: #0006;
 }
 
+.bg-black\/50 {
+  background-color: #00000080;
+}
+
 .bg-card {
   background-color: hsl(var(--card));
 }
@@ -1131,10 +1108,6 @@ body {
 
 .bg-secondary\/40 {
   background-color: hsl(var(--secondary) / .4);
-}
-
-.bg-black\/50 {
-  background-color: #00000080;
 }
 
 .bg-gradient-to-b {
@@ -1293,6 +1266,11 @@ body {
   padding-right: 2rem;
 }
 
+.py-1 {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
 .py-2 {
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -1306,11 +1284,6 @@ body {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-1 {
-  padding-top: .25rem;
-  padding-bottom: .25rem;
 }
 
 .pb-32 {
@@ -1457,6 +1430,11 @@ body {
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity, 1));
+}
+
 .text-muted-foreground {
   color: hsl(var(--muted-foreground));
 }
@@ -1486,11 +1464,6 @@ body {
 .text-yellow-50 {
   --tw-text-opacity: 1;
   color: rgb(254 252 232 / var(--tw-text-opacity, 1));
-}
-
-.text-green-500 {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -1853,10 +1826,6 @@ body {
 
 .group:hover .group-hover\:opacity-0 {
   opacity: 0;
-}
-
-.group:hover .group-hover\:opacity-100 {
-  opacity: 1;
 }
 
 .dark\:text-black:is(.dark *) {

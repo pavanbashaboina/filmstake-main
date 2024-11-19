@@ -511,7 +511,7 @@ const userSlice = (set, get)=>({
             try {
                 const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$esm2017$2f$index$2d$2cab5241$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__c__as__signInWithPopup$3e$__["signInWithPopup"])(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2f$firebase$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["auth"], __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2f$firebase$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["provider"]);
                 const idToken = await result.user.getIdToken();
-                const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].post(`${("TURBOPACK compile-time value", "http://localhost:5050/api/v1")}/signin`, {
+                const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].post(`${("TURBOPACK compile-time value", "https://filmstake-main.onrender.com/api/v1")}/signin`, {
                     idToken
                 }, {
                     headers: {
@@ -533,7 +533,7 @@ const userSlice = (set, get)=>({
         logOutAction: async ()=>{
             try {
                 console.log('Attempting logout'); // Debug log
-                const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get(`${("TURBOPACK compile-time value", "http://localhost:5050/api/v1")}/logout`, {
+                const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get(`${("TURBOPACK compile-time value", "https://filmstake-main.onrender.com/api/v1")}/logout`, {
                     withCredentials: true // Ensure credentials are sent
                 });
                 console.log('Logout response:', data); // Log server response
@@ -568,7 +568,7 @@ const movieSlice = (set, get)=>({
         moviesList: [],
         movieListAction: async ()=>{
             try {
-                const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get(`${("TURBOPACK compile-time value", "http://localhost:5050/api/v1")}/movie-list`, {
+                const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get(`${("TURBOPACK compile-time value", "https://filmstake-main.onrender.com/api/v1")}/movie-list`, {
                     headers: {
                         "Content-Type": "application/json"
                     }
