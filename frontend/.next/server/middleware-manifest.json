@@ -1,6 +1,58 @@
 {
   "version": 3,
-  "middleware": {},
-  "sortedMiddleware": [],
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/_e472eb._.js",
+        "server/edge/chunks/[root of the server]__bfe987._.js",
+        "server/edge/chunks/edge-wrapper_daab50.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|_next|static|favicon.ico).*))(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/((?!api|_next|static|favicon.ico).*)"
+        }
+      ],
+      "wasm": [],
+      "assets": [
+        {
+          "name": "server/edge/chunks/_e472eb._.js.map",
+          "filePath": "server/edge/chunks/_e472eb._.js.map"
+        },
+        {
+          "name": "server/edge/chunks/_e472eb._.js",
+          "filePath": "server/edge/chunks/_e472eb._.js"
+        },
+        {
+          "name": "server/edge/chunks/[root of the server]__bfe987._.js.map",
+          "filePath": "server/edge/chunks/[root of the server]__bfe987._.js.map"
+        },
+        {
+          "name": "server/edge/chunks/[root of the server]__bfe987._.js",
+          "filePath": "server/edge/chunks/[root of the server]__bfe987._.js"
+        },
+        {
+          "name": "server/edge/chunks/edge-wrapper_daab50.js.map",
+          "filePath": "server/edge/chunks/edge-wrapper_daab50.js.map"
+        },
+        {
+          "name": "server/edge/chunks/edge-wrapper_daab50.js",
+          "filePath": "server/edge/chunks/edge-wrapper_daab50.js"
+        }
+      ],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "btzoxpmdN4HYHDC+iKQS5AI49otVxJxwTmARqX5SVJE=",
+        "__NEXT_PREVIEW_MODE_ID": "e9c2d99d9fe53058186a9c2445603578",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "42974662d9e657252345fd30fcff2dff4af90e58afe1ab66b833c0eae2483c68",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "eea07dbe3db405e76a2d66f26efed0fbc084c5a61a4b7e7622c2b99ace70de23"
+      }
+    }
+  },
+  "sortedMiddleware": [
+    "/"
+  ],
   "functions": {}
 }

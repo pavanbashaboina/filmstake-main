@@ -15,6 +15,11 @@ const NavigatePages = () => {
 
     const menuItems = [
         {
+            title: "MOVIES",
+            description: "Movies to invest",
+            pageUrl: "/movies"
+        },
+        {
             title: "BUY CREDITS",
             description: "Invest with credits",
             pageUrl: "/account/credits"
@@ -27,13 +32,10 @@ const NavigatePages = () => {
         {
             title: "CONTACT US",
             description: "Our social medias",
-            pageUrl: "contactus"
+            pageUrl: "/contact-us"
         },
-        {
-            title: "SIGNIN",
-            description: "signed up to start your journey",
-            pageUrl: "/signin"
-        }
+        
+       
     ];
 
     // Initialize refs arrays

@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/pavan/Desktop/filmstake-new/frontend/app/%28pages%29/movies/%5BmovieId%5D/page.jsx"],"sourcesContent":["\"use client\"\r\n\r\nimport React from 'react'\r\nimport { useParams } from 'next/navigation'\r\n\r\n\r\nconst page = () => {\r\n\r\n    const {movieId} = useParams()\r\n\r\n    return (\r\n        <div className='mt-[20vh]'>{movieId}</div>\r\n    )\r\n}\r\n\r\nexport default page"],"names":[],"mappings":";;;;AAEA;AACA;;;AAHA;;;AAMA,MAAM,OAAO;;IAET,MAAM,EAAC,OAAO,EAAC,GAAG,CAAA,GAAA,qIAAA,CAAA,YAAS,AAAD;IAE1B,qBACI,6LAAC;QAAI,WAAU;kBAAa;;;;;;AAEpC;GAPM;;QAEgB,qIAAA,CAAA,YAAS;;;uCAOhB"}},
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/pavan/Desktop/filmstake-new/frontend/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}},
+    {"offset": {"line": 50, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

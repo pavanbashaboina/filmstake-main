@@ -6,12 +6,19 @@ import { Cinzel } from 'next/font/google';
 import { ClipperLogoSvg, menuItems, UserSvg } from '@/lib/utils/helper';
 import { useTheme } from 'next-themes';
 import { Moon, Sun } from 'lucide-react';
+import manageStore from '@/lib/store/store';
+import Image from 'next/image';
+import { Button } from '../ui/button';
 
 const cinzelFont = Cinzel({ subsets: ['latin'] });
 
 const Navbar = () => {
+
+  const { user, isAuthenticated, logOutAction } = manageStore()
+
   const [mounted, setMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [accountOpen, setAccountOpen] = useState(false)
   const { theme, setTheme } = useTheme();
 
 
@@ -21,6 +28,22 @@ const Navbar = () => {
 
   if (!mounted) {
     return null;
+  }
+
+  const handleAccountOpen = () => {
+    setAccountOpen(!accountOpen)
+  }
+
+  const handleAccountOpenBlur = (e) => {
+
+    setAccountOpen(false);
+
+  }
+
+
+  const handleLogout = () => {
+    logOutAction()
+
   }
 
   return (
@@ -35,16 +58,23 @@ const Navbar = () => {
             <h3 className="text-2xl max-md:text-xl text-foreground">STAKE</h3>
           </div>
         </Link>
+        
         <div className="flex items-center gap-3">
-          <Link href="/signin">
-            <button className="cursor-pointer rounded-full border border-border bg-secondary/40 backdrop-blur-md px-5 py-2 max-md:px-2 transition-all duration-300 ease-in-out hover:bg-secondary/60 hover:border-border/50 hover:scale-105 hover:shadow-lg hover:shadow-background/20">
-              <div className="flex items-center gap-4">
-                <p className="max-md:hidden text-foreground">Signin</p>
-                <UserSvg />
-              </div>
-            </button>
-          </Link>
-          <button 
+        <Link href="/movies" className='hover:text-gray-500 font-medium mr-3'>Movies</Link>
+          {
+            user && isAuthenticated ?
+              <Image onClick={handleAccountOpen} src={user?.profile_img} width={34} height={34} className='bg-cover cursor-pointer mr-2  rounded-full' alt='profile' priority />
+              :
+              <Link href="/signin">
+                <button className="cursor-pointer rounded-full border border-border bg-secondary/40 backdrop-blur-md px-5 py-2 max-md:px-2 transition-all duration-300 ease-in-out hover:bg-secondary/60 hover:border-border/50 hover:scale-105 hover:shadow-lg hover:shadow-background/20">
+                  <div className="flex items-center gap-4">
+                    <p className="max-md:hidden text-foreground">Signin</p>
+                    <UserSvg />
+                  </div>
+                </button>
+              </Link>
+          }
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="cursor-pointer rounded-full border border-border bg-secondary/40 backdrop-blur-md px-2 py-2 transition-all duration-300 ease-in-out hover:bg-secondary/60 hover:border-border/50 hover:scale-105 hover:shadow-lg hover:shadow-background/20 z-50"
           >
@@ -57,15 +87,13 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div 
-        className={`fixed inset-0 z-40 transition-all duration-500 ${
-          isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
-      >
-        <div 
-          className={`absolute inset-0 bg-background/95 backdrop-blur-lg transition-all duration-500 ${
-            isMenuOpen ? 'scale-100' : 'scale-0'
+      <div
+        className={`fixed inset-0 z-40 transition-all duration-500 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
           }`}
+      >
+        <div
+          className={`absolute inset-0 bg-background/95 backdrop-blur-lg transition-all duration-500 ${isMenuOpen ? 'scale-100' : 'scale-0'
+            }`}
           style={{ transformOrigin: 'top right' }}
         />
 
@@ -75,9 +103,8 @@ const Navbar = () => {
               <Link
                 key={index}
                 href={item.href}
-                className={`relative group transition-all duration-500 ${
-                  isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-                }`}
+                className={`relative group transition-all duration-500 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+                  }`}
                 style={{
                   transitionDelay: `${index * 100}ms`
                 }}
@@ -91,29 +118,26 @@ const Navbar = () => {
                 <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-foreground transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
-            
+
             {/* Theme Toggle Button */}
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className={`relative group transition-all duration-500 ${
-                isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-              }`}
+              className={`relative group transition-all duration-500 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+                }`}
               style={{
                 transitionDelay: `${menuItems.length * 100}ms`
               }}
             >
               <div className="flex items-center gap-4 text-5xl font-bold text-foreground/80 hover:text-foreground transition-colors duration-300">
-                <span>{theme=="dark"?"light":"dark"}</span>
+                <span>{theme == "dark" ? "light" : "dark"}</span>
                 <div className="relative w-16 h-16 flex items-center justify-center">
                   <Moon
-                    className={`w-12 h-12 absolute transition-all duration-300 ${
-                      theme === 'dark' ? 'rotate-0 opacity-0 scale-0' : 'opacity-100 scale-100'
-                    }`}
+                    className={`w-12 h-12 absolute transition-all duration-300 ${theme === 'dark' ? 'rotate-0 opacity-0 scale-0' : 'opacity-100 scale-100'
+                      }`}
                   />
-                  <Sun 
-                    className={`w-12 h-12 absolute transition-all duration-300 ${
-                      theme === 'dark' ? 'rotate-0 opacity-100 scale-100' : 'opacity-0 scale-0'
-                    }`}
+                  <Sun
+                    className={`w-12 h-12 absolute transition-all duration-300 ${theme === 'dark' ? 'rotate-0 opacity-100 scale-100' : 'opacity-0 scale-0'
+                      }`}
                   />
                 </div>
               </div>
@@ -122,6 +146,15 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {
+        user && isAuthenticated ?
+          <div tabIndex={0} onBlur={handleAccountOpenBlur} className={`${accountOpen ? "block" : "hidden"} fixed z-[100] px-3 py-4 rounded-lg bg-gray-300 flex gap-3 flex-col items-center justify-center top-[10vh] right-[7vw]`}>
+            <Link href={user?.username} className='dark:text-black hover:text-gray-700 flex gap-2'>Account<UserSvg /></Link>
+            <Button onClick={handleLogout}>Logout</Button>
+          </div> :
+          <></>
+      }
     </>
   );
 };

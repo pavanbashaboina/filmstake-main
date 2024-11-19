@@ -1024,6 +1024,11 @@ const NavigatePages = ()=>{
     const lineRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])([]);
     const menuItems = [
         {
+            title: "MOVIES",
+            description: "Movies to invest",
+            pageUrl: "/movies"
+        },
+        {
             title: "BUY CREDITS",
             description: "Invest with credits",
             pageUrl: "/account/credits"
@@ -1036,12 +1041,7 @@ const NavigatePages = ()=>{
         {
             title: "CONTACT US",
             description: "Our social medias",
-            pageUrl: "contactus"
-        },
-        {
-            title: "SIGNIN",
-            description: "signed up to start your journey",
-            pageUrl: "/signin"
+            pageUrl: "/contact-us"
         }
     ];
     // Initialize refs arrays
@@ -1147,7 +1147,7 @@ const NavigatePages = ()=>{
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "[project]/components/home/NavigatePages.jsx",
-                                        lineNumber: 150,
+                                        lineNumber: 152,
                                         columnNumber: 33
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1162,23 +1162,23 @@ const NavigatePages = ()=>{
                                                 d: "M3,12 L21,12 M15,6 L21,12 L15,18"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/home/NavigatePages.jsx",
-                                                lineNumber: 160,
+                                                lineNumber: 162,
                                                 columnNumber: 41
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/home/NavigatePages.jsx",
-                                            lineNumber: 156,
+                                            lineNumber: 158,
                                             columnNumber: 37
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/home/NavigatePages.jsx",
-                                        lineNumber: 155,
+                                        lineNumber: 157,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/home/NavigatePages.jsx",
-                                lineNumber: 149,
+                                lineNumber: 151,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1186,7 +1186,7 @@ const NavigatePages = ()=>{
                                 className: "absolute bottom-0 left-0 h-px bg-foreground"
                             }, void 0, false, {
                                 fileName: "[project]/components/home/NavigatePages.jsx",
-                                lineNumber: 171,
+                                lineNumber: 173,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1197,33 +1197,33 @@ const NavigatePages = ()=>{
                                     children: item.description
                                 }, void 0, false, {
                                     fileName: "[project]/components/home/NavigatePages.jsx",
-                                    lineNumber: 181,
+                                    lineNumber: 183,
                                     columnNumber: 33
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/home/NavigatePages.jsx",
-                                lineNumber: 177,
+                                lineNumber: 179,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/home/NavigatePages.jsx",
-                        lineNumber: 144,
+                        lineNumber: 146,
                         columnNumber: 25
                     }, this)
                 }, index, false, {
                     fileName: "[project]/components/home/NavigatePages.jsx",
-                    lineNumber: 143,
+                    lineNumber: 145,
                     columnNumber: 21
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/home/NavigatePages.jsx",
-            lineNumber: 138,
+            lineNumber: 140,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/home/NavigatePages.jsx",
-        lineNumber: 137,
+        lineNumber: 139,
         columnNumber: 9
     }, this);
 };

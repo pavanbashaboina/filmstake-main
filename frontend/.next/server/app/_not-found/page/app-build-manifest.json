@@ -3,8 +3,11 @@
     "/_not-found/page": [
       "static/chunks/_2b2515._.js",
       "static/chunks/app_favicon_ico_mjs_5930e7._.js",
-      "static/chunks/node_modules_fbc301._.js",
-      "static/chunks/[root of the server]__3c823b._.js",
+      "static/chunks/node_modules_next_372ba7._.js",
+      "static/chunks/node_modules_@firebase_auth_dist_esm2017_504bfd._.js",
+      "static/chunks/node_modules_axios_lib_c4c49c._.js",
+      "static/chunks/node_modules_f88270._.js",
+      "static/chunks/[root of the server]__c8699a._.js",
       "static/chunks/[root of the server]__e4dce7._.css",
       "static/chunks/app_layout_36ac26.js",
       "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",

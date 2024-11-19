@@ -1,6 +1,10 @@
 {
   "app": {
-    "[project]/app/page": [
+    "[project]/app/(pages)/movies/page": [
+      "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
+      "static/media/8vIJ7ww63mVu7gt79mT7PkRXMw-s.p.ada44f3a.woff2"
+    ],
+    "[project]/app/(home)/page": [
       "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
       "static/media/8vIJ7ww63mVu7gt79mT7PkRXMw-s.p.ada44f3a.woff2"
     ],
@@ -8,11 +12,7 @@
       "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
       "static/media/8vIJ7ww63mVu7gt79mT7PkRXMw-s.p.ada44f3a.woff2"
     ],
-    "[project]/app/(pages)/signin/page": [
-      "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
-      "static/media/8vIJ7ww63mVu7gt79mT7PkRXMw-s.p.ada44f3a.woff2"
-    ],
-    "[project]/app/(home)/page": [
+    "[project]/app/(pages)/movies/[movieId]/page": [
       "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
       "static/media/8vIJ7ww63mVu7gt79mT7PkRXMw-s.p.ada44f3a.woff2"
     ]

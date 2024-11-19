@@ -45,10 +45,10 @@ export const UserSvg = () => {
 
 export const menuItems = [
     { title: 'Home', href: '/' },
+    { title: 'Movies', href: '/movies' },
     { title: 'Buy Credits', href: '/account/credits' },
     { title: 'Team', href: '/team' },
     { title: 'Contact us', href: '/contactus' },
-    { title: 'SignIn', href: '/signin' }
 ];
 
 

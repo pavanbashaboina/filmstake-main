@@ -36,3 +36,18 @@ export const googleSignUp = catchAsyncErrors(async (req, res, next) => {
     })
 
 })
+
+
+export const logOut = catchAsyncErrors(async (req, res, next) => {
+    res.cookie("tokenid", null, {
+        expires: new Date(Date.now()),
+        httpOnly: true,
+        secure: process.env.NODE_ENV !== "development",
+        sameSite: "strict"
+    })
+
+    res.status(200).json({
+        success: true,
+        message: 'Logged out'
+    })
+})

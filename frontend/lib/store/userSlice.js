@@ -32,7 +32,27 @@ export const userSlice = (set, get) => ({
             get().setIsloading(false)
 
         } catch (error) {
-            handleError(error,get)
+            handleError(error, get)
+        }
+    },
+
+    //logout
+    logOutAction: async () => {
+        try {
+            console.log('Attempting logout'); // Debug log
+            const { data } = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/logout`, {
+                withCredentials: true // Ensure credentials are sent
+            })
+            
+            console.log('Logout response:', data); // Log server response
+            
+            set({ isAuthenticated: false, user: null })
+            get().setMessage(data.message)
+            get().setIsloading(false)
+        } catch (error) {
+            console.error('Logout error:', error); // Log any errors
+            handleError(error, get)
         }
     }
+
 })
