@@ -60,7 +60,7 @@ const Navbar = () => {
         </Link>
         
         <div className="flex items-center gap-3">
-        <Link href="/movies" className='hover:text-gray-500 font-medium mr-3'>Movies</Link>
+        <Link href="/movies" className='hover:text-gray-500 font-medium mr-3 max-md:hidden'>Movies</Link>
           {
             user && isAuthenticated ?
               <Image onClick={handleAccountOpen} src={user?.profile_img} width={34} height={34} className='bg-cover cursor-pointer mr-2  rounded-full' alt='profile' priority />
@@ -111,7 +111,7 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 <div className="overflow-hidden">
-                  <span className="text-5xl font-bold text-foreground/80 hover:text-foreground transition-colors duration-300 block">
+                  <span className="lg:text-5xl text-3xl font-bold text-foreground/80 hover:text-foreground transition-colors duration-300 block">
                     {item.title}
                   </span>
                 </div>
@@ -128,7 +128,7 @@ const Navbar = () => {
                 transitionDelay: `${menuItems.length * 100}ms`
               }}
             >
-              <div className="flex items-center gap-4 text-5xl font-bold text-foreground/80 hover:text-foreground transition-colors duration-300">
+              <div className="flex items-center gap-4 text-3xl lg:text-5xl font-bold text-foreground/80 hover:text-foreground transition-colors duration-300">
                 <span>{theme == "dark" ? "light" : "dark"}</span>
                 <div className="relative w-16 h-16 flex items-center justify-center">
                   <Moon

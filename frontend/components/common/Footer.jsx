@@ -49,7 +49,7 @@ const Footer = () => {
                     {/* About Section */}
                     <div>
                         <h3 className="text-lg font-semibold mb-4 text-primary">
-                            About Us
+                           What we do
                         </h3>
                         <p className="text-muted-foreground text-base leading-relaxed">
                             Movie and profits should not be permitted to only certain people it should be very one's investment.
@@ -62,13 +62,14 @@ const Footer = () => {
                             Connect With Us
                         </h3>
                         <div className="flex flex-wrap gap-4">
-                            {['Twitter', 'LinkedIn', 'Instagram'].map((social) => (
+                            {[{social:"Twitter",link:""}, {social:"Linkedin",link:""}, {social:"Instagram",link:"https://www.instagram.com/filmstake_co?igsh=MTJpNjIyM3pyZnJnYw=="}].map((social,i) => (
                                 <Link
-                                    key={social}
-                                    href="#"
+                                    key={i}
+                                    href={social.link}
+                                    target='_blank'
                                     className="text-muted-foreground hover:text-primary transition-colors duration-300"
                                 >
-                                    {social}
+                                    {social.social}
                                 </Link>
                             ))}
                         </div>

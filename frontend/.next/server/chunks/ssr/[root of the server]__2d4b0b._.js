@@ -255,7 +255,7 @@ const Footer = ()=>{
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-lg font-semibold mb-4 text-primary",
-                                        children: "About Us"
+                                        children: "What we do"
                                     }, void 0, false, {
                                         fileName: "[project]/components/common/Footer.jsx",
                                         lineNumber: 51,
@@ -288,14 +288,24 @@ const Footer = ()=>{
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex flex-wrap gap-4",
                                         children: [
-                                            'Twitter',
-                                            'LinkedIn',
-                                            'Instagram'
-                                        ].map((social)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                href: "#",
+                                            {
+                                                social: "Twitter",
+                                                link: ""
+                                            },
+                                            {
+                                                social: "Linkedin",
+                                                link: ""
+                                            },
+                                            {
+                                                social: "Instagram",
+                                                link: "https://www.instagram.com/filmstake_co?igsh=MTJpNjIyM3pyZnJnYw=="
+                                            }
+                                        ].map((social, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                href: social.link,
+                                                target: "_blank",
                                                 className: "text-muted-foreground hover:text-primary transition-colors duration-300",
-                                                children: social
-                                            }, social, false, {
+                                                children: social.social
+                                            }, i, false, {
                                                 fileName: "[project]/components/common/Footer.jsx",
                                                 lineNumber: 66,
                                                 columnNumber: 33
@@ -324,7 +334,7 @@ const Footer = ()=>{
                                 className: "absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-30"
                             }, void 0, false, {
                                 fileName: "[project]/components/common/Footer.jsx",
-                                lineNumber: 80,
+                                lineNumber: 81,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -338,7 +348,7 @@ const Footer = ()=>{
                                                 children: "Privacy Policy"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/common/Footer.jsx",
-                                                lineNumber: 83,
+                                                lineNumber: 84,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -346,7 +356,7 @@ const Footer = ()=>{
                                                 children: "|"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/common/Footer.jsx",
-                                                lineNumber: 84,
+                                                lineNumber: 85,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -354,13 +364,13 @@ const Footer = ()=>{
                                                 children: "Terms of Service"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/common/Footer.jsx",
-                                                lineNumber: 85,
+                                                lineNumber: 86,
                                                 columnNumber: 29
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/common/Footer.jsx",
-                                        lineNumber: 82,
+                                        lineNumber: 83,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -370,19 +380,19 @@ const Footer = ()=>{
                                         children: "Built by Pavan Bashaboina SWE"
                                     }, void 0, false, {
                                         fileName: "[project]/components/common/Footer.jsx",
-                                        lineNumber: 87,
+                                        lineNumber: 88,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/common/Footer.jsx",
-                                lineNumber: 81,
+                                lineNumber: 82,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/common/Footer.jsx",
-                        lineNumber: 79,
+                        lineNumber: 80,
                         columnNumber: 17
                     }, this)
                 ]
